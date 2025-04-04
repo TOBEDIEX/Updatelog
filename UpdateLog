@@ -1,0 +1,209 @@
+# Update Log v1.0.0
+
+## Major Systems Implementation
+
+### Core Systems
+- Implemented GameManager system for centralized game control and state management
+- Added TurnSystem for handling player turns and order management 
+- Created BoardSystem for managing game board, tile connections and player movement
+- Developed ClassSystem for character classes, leveling and stats
+
+### User Interface
+- Added LoadingScreen with asset preloading and player readiness check
+- Implemented ClassSelection screen with class preview and selection
+- Created MainGameUI with player status bars and turn indicators
+- Added DiceRoll & PathSelection interface for player movement
+- Implemented Combat UI for turn-based battles
+- Added Shop, Inventory, Quest and Casino interfaces
+
+### Networking & Optimization
+- Implemented RemoteEventsOptimizer for efficient client-server communication
+- Added PerformanceMonitor for runtime optimization and debugging
+- Created centralized event handling system for game actions
+
+### Client-Side Controllers
+- Implemented BoardController for client-side board visualization
+- Added camera control system with smooth following and transitions
+- Created UI controllers for various game screens
+- Implemented visual effects and animations for game events
+
+## Detailed Features
+
+### Board System
+- Dynamic tile connection system
+- Path finding and movement validation
+- Special tile effects and triggers
+- Visual path highlighting and selection
+
+### Class System
+- Three base classes (Warrior, Mage, Thief)
+- Unique class abilities and growth rates
+- Class leveling separate from character level
+- Advanced class evolution system
+
+### Combat System
+- Turn-based combat mechanics
+- Attack and defense options
+- Special abilities based on class
+- Combat animations and effects
+
+### Shop & Economy
+- Dynamic shop inventory system
+- Item purchasing and inventory management
+- Casino mini-games
+- Banking system with interest
+
+## Technical Improvements
+
+### Performance
+- Implemented batch processing for network events
+- Added memory optimization for large-scale operations
+- Created caching system for frequently accessed data
+- Optimized UI updates and rendering
+
+### Code Architecture
+- Modular system design for easy maintenance
+- Clear separation of client and server logic
+- Robust error handling and recovery
+- Comprehensive documentation
+
+### Networking
+- Optimized RemoteEvent usage
+- Implemented throttling for network actions
+- Added batch processing for bulk updates
+- Created fail-safe mechanisms for disconnections
+
+## Developer Tools
+- Added PerformanceMonitor for real-time optimization
+- Implemented debug logging system
+- Created testing framework for game systems
+- Added development console commands
+
+## Known Issues
+- Need to implement inventory size limitations
+- Combat balance needs adjustment
+- Some UI elements need polish
+- Additional error handling needed for edge cases
+
+## Future Plans
+- Add more character classes
+- Implement additional special tiles
+- Expand shop system
+- Add more casino games
+- Enhance visual effects
+- Implement save system
+
+## Technical Notes
+- Requires Roblox Studio
+- Built for multiplayer (2-4 players)
+- Minimum 2 players required to start
+- Uses new Roblox physics system
+- Compatible with latest Roblox API
+
+## Installation
+Files should be placed in their respective locations within the Roblox Studio project structure as specified in the file headers.
+
+thai translate
+# บันทึกการอัปเดต เวอร์ชัน 1.0.0
+
+## การพัฒนาระบบหลัก
+
+### ระบบพื้นฐาน
+- เพิ่มระบบ GameManager สำหรับควบคุมเกมและจัดการสถานะ
+- เพิ่มระบบ TurnSystem สำหรับจัดการเทิร์นและลำดับผู้เล่น
+- สร้างระบบ BoardSystem สำหรับจัดการกระดาน การเชื่อมต่อช่อง และการเคลื่อนที่ของผู้เล่น
+- พัฒนาระบบ ClassSystem สำหรับคลาสตัวละคร การเลเวลอัพ และค่าสถานะ
+
+### ส่วนติดต่อผู้ใช้
+- เพิ่มหน้าโหลดเกมพร้อมระบบโหลดทรัพยากรและตรวจสอบความพร้อมผู้เล่น
+- เพิ่มหน้าเลือกคลาสพร้อมตัวอย่างและระบบการเลือก
+- สร้างหน้า UI หลักของเกมพร้อมแถบสถานะผู้เล่นและตัวบ่งชี้เทิร์น
+- เพิ่มส่วนติดต่อการทอยลูกเต๋าและเลือกเส้นทาง
+- เพิ่มหน้า UI การต่อสู้แบบเทิร์นเบส
+- เพิ่มหน้าร้านค้า คลังของ ภารกิจ และคาสิโน
+
+### เครือข่ายและการเพิ่มประสิทธิภาพ
+- เพิ่มระบบ RemoteEventsOptimizer สำหรับการสื่อสารระหว่างไคลเอนต์-เซิร์ฟเวอร์ที่มีประสิทธิภาพ
+- เพิ่มระบบ PerformanceMonitor สำหรับการปรับแต่งประสิทธิภาพและดีบัก
+- สร้างระบบจัดการเหตุการณ์แบบรวมศูนย์สำหรับการกระทำในเกม
+
+### ตัวควบคุมฝั่งไคลเอนต์
+- เพิ่มระบบ BoardController สำหรับแสดงผลกระดานฝั่งไคลเอนต์
+- เพิ่มระบบควบคุมกล้องพร้อมการติดตามและเปลี่ยนมุมมองแบบนุ่มนวล
+- สร้างตัวควบคุม UI สำหรับหน้าจอต่างๆ ในเกม
+- เพิ่มเอฟเฟกต์ภาพและแอนิเมชันสำหรับเหตุการณ์ในเกม
+
+## รายละเอียดคุณสมบัติ
+
+### ระบบกระดาน
+- ระบบเชื่อมต่อช่องแบบไดนามิก
+- การค้นหาเส้นทางและตรวจสอบการเคลื่อนที่
+- เอฟเฟกต์และทริกเกอร์พิเศษของช่อง
+- การเน้นและเลือกเส้นทางแบบภาพ
+
+### ระบบคลาส
+- สามคลาสพื้นฐาน (นักรบ นักเวท โจร)
+- ความสามารถพิเศษและอัตราการเติบโตเฉพาะคลาส
+- ระบบเลเวลคลาสแยกจากเลเวลตัวละคร
+- ระบบวิวัฒนาการคลาสขั้นสูง
+
+### ระบบการต่อสู้
+- กลไกการต่อสู้แบบเทิร์นเบส
+- ตัวเลือกการโจมตีและป้องกัน
+- ความสามารถพิเศษตามคลาส
+- แอนิเมชันและเอฟเฟกต์การต่อสู้
+
+### ร้านค้าและเศรษฐกิจ
+- ระบบสินค้าในร้านแบบไดนามิก
+- การซื้อไอเทมและจัดการคลัง
+- มินิเกมคาสิโน
+- ระบบธนาคารพร้อมดอกเบี้ย
+
+## การปรับปรุงทางเทคนิค
+
+### ประสิทธิภาพ
+- เพิ่มการประมวลผลแบบแบตช์สำหรับเหตุการณ์เครือข่าย
+- เพิ่มการเพิ่มประสิทธิภาพหน่วยความจำสำหรับการทำงานขนาดใหญ่
+- สร้างระบบแคชสำหรับข้อมูลที่เข้าถึงบ่อย
+- ปรับแต่งการอัปเดต UI และการเรนเดอร์
+
+### สถาปัตยกรรมโค้ด
+- ออกแบบระบบแบบโมดูลาร์เพื่อการบำรุงรักษาง่าย
+- แยกลอจิกฝั่งไคลเอนต์และเซิร์ฟเวอร์อย่างชัดเจน
+- จัดการข้อผิดพลาดอย่างรอบคอบพร้อมการกู้คืน
+- เอกสารประกอบที่ครอบคลุม
+
+### เครือข่าย
+- ปรับแต่ง RemoteEvent เพื่อประสิทธิภาพสูงสุด
+- เพิ่มการควบคุมอัตราการส่งข้อมูล
+- เพิ่มการประมวลผลแบบแบตช์สำหรับการอัปเดตจำนวนมาก
+- สร้างกลไกป้องกันความล้มเหลวสำหรับการตัดการเชื่อมต่อ
+
+## เครื่องมือสำหรับนักพัฒนา
+- เพิ่มระบบ PerformanceMonitor สำหรับการเพิ่มประสิทธิภาพแบบเรียลไทม์
+- เพิ่มระบบบันทึกการดีบัก
+- สร้างเฟรมเวิร์กการทดสอบสำหรับระบบเกม
+- เพิ่มคำสั่งคอนโซลสำหรับการพัฒนา
+
+## ปัญหาที่ทราบ
+- ต้องเพิ่มการจำกัดขนาดคลังของ
+- ต้องปรับสมดุลการต่อสู้
+- องค์ประกอบ UI บางส่วนต้องขัดเกลา
+- ต้องเพิ่มการจัดการข้อผิดพลาดในบางกรณี
+
+## แผนในอนาคต
+- เพิ่มคลาสตัวละคร
+- เพิ่มช่องพิเศษ
+- ขยายระบบร้านค้า
+- เพิ่มเกมคาสิโน
+- เพิ่มเอฟเฟกต์ภาพ
+- เพิ่มระบบบันทึกเกม
+
+## หมายเหตุทางเทคนิค
+- สร้างสำหรับผู้เล่นหลายคน (2-4 คน)
+- ต้องมีผู้เล่นอย่างน้อย 2 คนจึงจะเริ่มเกมได้
+- ใช้ระบบฟิสิกส์ใหม่ของ Roblox
+- รองรับ Roblox API เวอร์ชันล่าสุด
+
+## การติดตั้ง
+ไฟล์ควรถูกวางในตำแหน่งที่เหมาะสมภายในโครงสร้างโปรเจค Roblox Studio ตามที่ระบุในส่วนหัวของแต่ละไฟล์
